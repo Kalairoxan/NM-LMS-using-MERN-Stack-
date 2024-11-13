@@ -1,0 +1,135 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the educator course form */
+.educator-course-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-image: url('your-background-image.jpg'); /* Add your background image */
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(10px); /* Apply blur effect on the background */
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Educator Course Form */
+form {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px; /* Maximum width to prevent it from getting too wide */
+  margin-top: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on form */
+form:hover {
+  transform: translateY(-10px); /* Slight upward movement */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Heading style */
+h2 {
+  color: #ff7b7b; /* Cute pink color */
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ff7b7b; /* Pink border on focus */
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7b7b;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #4CAF50; /* Green color for hover effect */
+}
+
+/* Add Section button styling */
+.add-section-btn {
+  background-color: #007bff;
+  color: white;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.add-section-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Course Sections */
+.sections {
+  margin-bottom: 20px;
+}
+
+.section-form {
+  margin-bottom: 20px;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4c4c; /* Red color for error */
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+    width: 100%;
+    max-width: 300px; /* Adjust max width for smaller screens */
+  }
+}

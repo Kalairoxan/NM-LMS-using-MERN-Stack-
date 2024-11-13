@@ -1,0 +1,143 @@
+/* Main container styling */
+.course-page {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+}
+
+/* Header and Profile Button container styling */
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Make sure header spans the entire width */
+  margin-bottom: 30px;
+  max-width: 1200px; /* Ensure the header does not exceed container width */
+}
+
+.course-header h2 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0; /* Remove default margin */
+  font-weight: bold;
+}
+
+/* Profile button styling */
+.profile-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.profile-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Container for the courses, using grid layout */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust for responsive layout */
+  gap: 20px; /* Reduced gap for better space distribution */
+  align-items: stretch; /* Ensure cards are the same height */
+  justify-items: center; /* Center courses within the grid */
+  width: 100%; /* Ensure the list spans the entire width of the container */
+}
+
+/* Each course card styling */
+.course-item {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+  justify-content: space-between; /* Space title, description, and button */
+  width: 100%;
+  max-width: 350px; /* Limit max width for each course card */
+  height: 100%; /* Ensure cards stretch to available height */
+  box-sizing: border-box; /* Prevent overflow */
+  background-color: #f9f9f9; /* Slightly different background color */
+}
+
+/* Course title styling */
+.course-item h3 {
+  margin-top: 0;
+  font-size: 1.25rem; /* Slightly smaller font size */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px; /* Spacing between title and description */
+}
+
+/* Course description styling */
+.course-item p {
+  color: #555;
+  flex-grow: 1; /* Push the description to fill available space */
+  margin-bottom: 15px; /* Adds spacing above the button */
+  font-size: 1rem; /* Make description text readable */
+  line-height: 1.4; /* Improve readability */
+}
+
+/* Price styling */
+.course-item .price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 20px; /* Space between price and buttons */
+}
+
+/* Button styling */
+.enroll-btn, .purchase-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start; /* Align button to the left */
+  width: 100%; /* Make buttons fill the width of the card */
+  margin-bottom: 10px; /* Space between buttons */
+}
+
+.enroll-btn:hover, .purchase-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Slightly enlarge the button when hovered */
+}
+
+/* Hover effect for course card */
+.course-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Purchase button specific styling */
+.purchase-btn {
+  background-color: #ffcc00; /* Yellow color for purchase */
+}
+
+.purchase-btn:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+}
+.video-container {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  height: 315px;
+  border-radius: 8px;
+}

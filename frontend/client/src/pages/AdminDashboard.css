@@ -1,0 +1,66 @@
+/* Main Admin Dashboard styles */
+.admin-dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .dashboard-section {
+    margin-bottom: 40px;
+  }
+  
+  .dashboard-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .dashboard-table th, .dashboard-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .dashboard-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .dashboard-table td {
+    background-color: #fff;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-table th, .dashboard-table td {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+    .dashboard-title {
+      font-size: 1.8rem;
+    }
+  }
+  

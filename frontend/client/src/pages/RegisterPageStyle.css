@@ -1,0 +1,135 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the registration form */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6; /* Light background color */
+}
+
+/* Registration Form */
+.registration-form {
+  background-color: #ffffff; /* White background for form */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 400px; /* Maximum width to prevent it from getting too wide */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on form */
+.registration-form:hover {
+  transform: translateY(-10px); /* Slight upward movement */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Heading style */
+h2 {
+  color: #ff7b7b; /* Cute pink color */
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  font-size: 24px; /* Larger font size for heading */
+}
+
+/* Input Fields */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Input fields focus effect */
+input:focus,
+select:focus {
+  border-color: #ff7b7b; /* Pink border on focus */
+}
+
+/* Dropdown styling */
+select {
+  -webkit-appearance: none; /* Remove default styling in browsers like Safari */
+  -moz-appearance: none; /* Remove default styling in Firefox */
+  appearance: none;
+  padding-right: 30px; /* Add space for the dropdown icon */
+  background: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E%3Cpath d=%22M6 8L3 5h6L6 8z%22 fill=%23ccc%22/%3E%3C/svg%3E') no-repeat right 10px center; /* Custom dropdown arrow */
+  background-size: 12px 12px;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7b7b;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #4CAF50; /* Slightly darker shade on hover */
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4c4c; /* Red color for error */
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Style for the login link */
+.login-link {
+  color: #ff7b7b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Align "Already have an account? Login" text */
+.registration-form p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.registration-form p a {
+  color: #ff7b7b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.registration-form p a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .registration-form {
+    padding: 20px;
+    width: 100%;
+    max-width: 300px; /* Adjust max width for smaller screens */
+  }
+}
+
+.login-box:hover, .register-box:hover {
+  animation: shake 0.5s ease-in-out;
+}
